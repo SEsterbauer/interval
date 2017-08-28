@@ -1,0 +1,22 @@
+{
+  "name": "interval",
+  "version": "0.9.0",
+  "description": "Persists tasks on specific recurring periods, utilizes a frontend for data management",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel client --out-file public/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cp ./client/css/index.css ./public/css/index.css | npm run build | node --harmony app.js",
+    "preinstall": "npm set progress=false",
+    "postinstall": "modclean -r"
+  },
+  "devDependencies": {
+    "modclean": "^2.0.0",
+    "babel-cli": "^6.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "4.15.4",
+    "sqlite3": "3.1.9"
+  }
+}

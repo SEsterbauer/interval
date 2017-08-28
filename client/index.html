@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Interval client</title>
+  <meta name="description" content="Interval client">
+  <meta name="author" content="Stefan Esterbauer">
+  <link rel="stylesheet" type="text/css" href="./public/css/index.css">
+</head>
+
+<body>
+  <div id="inputContainer">
+    <p>Input a name for an entity and assign it a value! Entities are persisted in a per-session fashion and can be imported at a later moment.</p>
+    <div id="inputElementContainer">
+      Entity: <input type="text" class="recordName">
+      Value: <input type="text" class="recordValue"><br>
+    </div>
+    <input type="button" id="submitData" value="Submit" disabled>
+  </div>
+  <div id="errorContainer"></div>
+  <div id="storageContainer"></div>
+  <div id="queueContainer">
+    Pending tasks: <span id="queueCounter">0</span>
+  </div>
+</body>
+<script src="./public/index.js"></script>
+</html>
