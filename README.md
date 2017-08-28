@@ -14,9 +14,9 @@ WebStorm -> Preferences -> Languages & Frameworks -> Javascript -> Code Quality 
 
 - `app.js` server & middleware initialization file
 - `routes.js` public API
-- `/classes` logic of the backend
+- `/classes` backend logic
 - `/client` frontend application
-- `/db` used in-file databases
+- `/db` migrated in-file databases
 - `/public` pre-compiled client source code
 
 ### Build process
